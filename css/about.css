@@ -1,0 +1,169 @@
+/* About Page Specific Styles */
+
+.page-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/about-header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.page-header h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.about-story, .about-mission {
+    display: flex;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text h2 {
+    color: #6f4e37;
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-text h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #d4a76a;
+    margin-top: 10px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.about-text ul li {
+    margin-bottom: 10px;
+}
+
+.team-section {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.team-section h2 {
+    color: #6f4e37;
+    font-size: 2em;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.team-section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #d4a76a;
+    margin: 10px auto 0;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    color: #6f4e37;
+    margin: 15px 0 5px;
+    font-size: 1.3em;
+}
+
+.team-member p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .about-story, .about-mission {
+        flex-direction: column;
+    }
+    
+    .about-mission {
+        flex-direction: column-reverse;
+    }
+    
+    .about-image, .about-text {
+        width: 100%;
+    }
+    
+    .team-members {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 2em;
+    }
+    
+    .about-text h2 {
+        font-size: 1.8em;
+    }
+    
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+}
