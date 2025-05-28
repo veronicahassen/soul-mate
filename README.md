@@ -20,7 +20,7 @@ Este proyecto es un sitio web para una tienda de yerba mate argentina llamada "S
 
 ## Estructura del proyecto
 
-- `index.html`: Página principal (próximamente)
+- `index.html`: Página principal
 - `menu.html`: Catálogo de productos
 - `contact.html`: Información de contacto y formulario
 - `css/`: Archivos de estilos
@@ -36,4 +36,4 @@ Este proyecto es un sitio web para una tienda de yerba mate argentina llamada "S
 
 ## Autor
 
-Desarrollado por Veronica para el curso de desarrollo web.
+Desarrollado por Tech Moms para la materia Desarrollo Web Front End.
