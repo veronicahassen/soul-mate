@@ -1,4 +1,4 @@
-/* Global Styles */
+/*///////////////// AJUSTES GENERALES//////////////////*/
 :root {
     --primary-color: #8B4513;     /* Marrón oscuro del mate */
     --secondary-color: #D2B48C;   /* Color caramelo claro del mate */
@@ -22,11 +22,25 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--background-light);
+    font-size: 16px;
 }
 
-a {
+/* Enlaces con pseudoclases */
+a:link {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+a:visited {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+a:active {
+    color: var(--light-accent);
 }
 
 ul {
@@ -54,8 +68,9 @@ ul {
     box-shadow: 0 5px 15px var(--shadow-color);
 }
 
-/* Header */
+/*__________________HEADER____________________________*/
 header {
+    width: 100%;
     background-color: var(--text-light);
     box-shadow: 0 2px 10px var(--shadow-color);
     position: sticky;
@@ -79,26 +94,25 @@ nav {
     flex: 2;
 }
 
-nav ul {
+nav > ul {
     display: flex;
     justify-content: flex-end;
 }
 
-nav ul li {
+nav > ul > li {
     margin-left: 30px;
 }
 
-nav ul li a {
+nav > ul > li > a {
     font-weight: 600;
     font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s ease;
     position: relative;
-    color: var(--primary-color);
 }
 
-nav ul li a:after {
+nav > ul > li > a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -109,16 +123,13 @@ nav ul li a:after {
     transition: width 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: var(--accent-color);
-}
-
-nav ul li a:hover:after {
+nav > ul > li > a:hover::after {
     width: 100%;
 }
 
-/* Page Header (for other pages) */
+/*__________________PAGE HEADER____________________________*/
 .page-header {
+    width: 100%;
     background-color: var(--primary-color);
     color: var(--text-light);
     text-align: center;
@@ -126,7 +137,7 @@ nav ul li a:hover:after {
     position: relative;
 }
 
-.page-header:before {
+.page-header::before {
     content: '';
     position: absolute;
     top: 0;
@@ -156,8 +167,9 @@ nav ul li a:hover:after {
     z-index: 1;
 }
 
-/* Footer */
+/*__________________FOOTER____________________________*/
 footer {
+    width: 100%;
     background-color: var(--background-dark);
     color: var(--text-light);
     padding: 60px 5% 30px;
@@ -206,10 +218,9 @@ footer {
     transition: all 0.3s ease;
 }
 
-.social-icons img {
-    width: 20px;
-    height: 20px;
-    filter: brightness(0) invert(1);
+.social-icons i {
+    color: var(--text-light);
+    font-size: 1.2em;
 }
 
 .social-icons a:hover {
@@ -225,7 +236,15 @@ footer {
     font-size: 0.9em;
 }
 
-/* Responsive Design */
+/*__________________RESPONSIVE DESIGN____________________________*/
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+    .page-header h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* Tablet vertical */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -235,11 +254,11 @@ footer {
         margin-bottom: 15px;
     }
     
-    nav ul {
+    nav > ul {
         justify-content: center;
     }
     
-    nav ul li {
+    nav > ul > li {
         margin: 0 15px;
     }
     
@@ -252,13 +271,18 @@ footer {
     }
 }
 
+/* Mobil 1 */
 @media (max-width: 480px) {
-    nav ul {
+    body {
+        font-size: 14px;
+    }
+    
+    nav > ul {
         flex-direction: column;
         align-items: center;
     }
     
-    nav ul li {
+    nav > ul > li {
         margin: 8px 0;
     }
     
@@ -269,5 +293,20 @@ footer {
     .btn {
         padding: 10px 20px;
         font-size: 0.8em;
+    }
+}
+
+/* Mobil 2 */
+@media (max-width: 375px) {
+    .page-header {
+        padding: 60px 15px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.6em;
+    }
+    
+    .footer-section {
+        min-width: 100%;
     }
 }

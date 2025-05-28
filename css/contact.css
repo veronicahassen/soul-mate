@@ -1,24 +1,25 @@
 /* Contact Page Specific Styles */
 
+/*__________________CONTACTO____________________________*/
 .contact-container {
+    width: 100%;
     max-width: 1200px;
     margin: 60px auto;
-    padding: 0 20px;
+    padding: 0 5%;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    justify-content: space-between;
 }
 
 .contact-info {
-    flex: 1;
-    min-width: 300px;
-    background-color: #fff;
+    flex: 0 0 48%;
+    background-color: var(--text-light);
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px var(--shadow-color);
     padding: 30px;
 }
 
-.contact-info h2 {
+.contact-info > h2 {
     color: var(--primary-color);
     font-size: 1.8em;
     margin-bottom: 30px;
@@ -26,7 +27,7 @@
     padding-bottom: 15px;
 }
 
-.contact-info h2:after {
+.contact-info > h2::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -42,38 +43,37 @@
     margin-bottom: 25px;
 }
 
-.info-item img {
-    width: 25px;
-    height: 25px;
+.info-item i {
+    color: var(--primary-color);
     margin-right: 15px;
     margin-top: 5px;
-    filter: invert(18%) sepia(57%) saturate(1372%) hue-rotate(19deg) brightness(91%) contrast(76%);
+    width: 25px;
+    text-align: center;
 }
 
 .info-item div {
     flex: 1;
 }
 
-.info-item h3 {
+.info-item div h3 {
     font-size: 1.1em;
     margin-bottom: 5px;
-    color: #4a4a4a;
+    color: var(--text-dark);
 }
 
-.info-item p {
+.info-item div p {
     color: #777;
 }
 
 .contact-form {
-    flex: 1;
-    min-width: 300px;
-    background-color: #fff;
+    flex: 0 0 48%;
+    background-color: var(--text-light);
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px var(--shadow-color);
     padding: 30px;
 }
 
-.contact-form h2 {
+.contact-form > h2 {
     color: var(--primary-color);
     font-size: 1.8em;
     margin-bottom: 30px;
@@ -81,7 +81,7 @@
     padding-bottom: 15px;
 }
 
-.contact-form h2:after {
+.contact-form > h2::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -99,7 +99,7 @@
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: #4a4a4a;
+    color: var(--text-dark);
 }
 
 .form-group input,
@@ -110,7 +110,7 @@
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-group input:focus,
@@ -121,11 +121,12 @@
 }
 
 .map-section {
-    padding: 60px 20px;
-    background-color: #f8f8f8;
+    width: 100%;
+    padding: 60px 5%;
+    background-color: var(--background-light);
 }
 
-.map-section h2 {
+.map-section > h2 {
     text-align: center;
     color: var(--primary-color);
     font-size: 2em;
@@ -134,7 +135,7 @@
     padding-bottom: 15px;
 }
 
-.map-section h2:after {
+.map-section > h2::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -146,21 +147,58 @@
 }
 
 .map-container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px var(--shadow-color);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/*__________________RESPONSIVE DESIGN____________________________*/
+/* Tablet horizontal */
+@media (max-width: 1080px) {
     .contact-container {
-        flex-direction: column;
+        max-width: 90%;
     }
-    
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
     .contact-info,
     .contact-form {
-        width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Mobil 1 */
+@media (max-width: 480px) {
+    .map-container iframe {
+        height: 350px;
+    }
+    
+    .contact-info > h2,
+    .contact-form > h2,
+    .map-section > h2 {
+        font-size: 1.6em;
+    }
+}
+
+/* Mobil 2 */
+@media (max-width: 375px) {
+    .map-container iframe {
+        height: 300px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
     }
 }

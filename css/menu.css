@@ -1,16 +1,19 @@
 /* Menu Page Specific Styles */
 
+/*__________________MENÚ PRINCIPAL____________________________*/
 .menu-container {
+    width: 100%;
     max-width: 1200px;
     margin: 60px auto;
-    padding: 0 20px;
+    padding: 0 5%;
 }
 
 .menu-category {
+    width: 100%;
     margin-bottom: 60px;
 }
 
-.menu-category h2 {
+.menu-category > h2 {
     color: var(--primary-color);
     font-size: 2em;
     margin-bottom: 30px;
@@ -19,7 +22,7 @@
     padding-bottom: 15px;
 }
 
-.menu-category h2:after {
+.menu-category > h2::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -31,12 +34,15 @@
 }
 
 .menu-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .menu-item {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 30px;
     background-color: var(--text-light);
     border-radius: 10px;
     overflow: hidden;
@@ -61,14 +67,14 @@
     padding: 20px;
 }
 
-.menu-item-info h3 {
+.menu-item-info > h3 {
     font-size: 1.3em;
     margin-bottom: 10px;
     color: var(--primary-color);
     font-weight: 600;
 }
 
-.menu-item-info p {
+.menu-item-info > p {
     color: #777;
     margin-bottom: 15px;
     line-height: 1.5;
@@ -84,19 +90,39 @@
     box-shadow: 0 2px 5px var(--shadow-color);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .menu-items {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+/*__________________RESPONSIVE DESIGN____________________________*/
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+    .menu-item {
+        flex: 0 0 calc(50% - 15px);
     }
 }
 
+/* Tablet vertical */
+@media (max-width: 768px) {
+    .menu-item {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+/* Mobil 1 */
 @media (max-width: 480px) {
-    .menu-items {
-        grid-template-columns: 1fr;
+    .menu-item {
+        flex: 0 0 100%;
     }
     
-    .menu-category h2 {
+    .menu-category > h2 {
         font-size: 1.8em;
+    }
+}
+
+/* Mobil 2 */
+@media (max-width: 375px) {
+    .menu-container {
+        padding: 0 4%;
+    }
+    
+    .menu-item-info > h3 {
+        font-size: 1.2em;
     }
 }
