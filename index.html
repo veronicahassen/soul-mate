@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mates & Yerbas - Tu café preferido</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header id="navbar-placeholder"></header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Tu café preferido</h1>
+            <div class="subtitle">Siempre Cerca</div>
+            <p>Mates, yerbas especiales y orgánicas. Encontrá tu tienda más cercana y tentate con nuestros productos.</p>
+            <button class="btn">Encontranos</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <h2>Nuestros Productos</h2>
+        <div class="carousel-container">
+            <button class="carousel-nav prev" onclick="moveCarousel(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-nav next" onclick="moveCarousel(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="carousel-wrapper">
+                <div class="carousel" id="productCarousel">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&w=400" alt="Mate Calabaza">
+                        <h3>Mate Calabaza</h3>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&w=400" alt="Yerba Orgánica">
+                        <h3>Yerba Orgánica</h3>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1589232877645-8a4acbe2b9e9?ixlib=rb-4.0.3&w=400" alt="Bombilla Premium">
+                        <h3>Bombilla Premium</h3>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&w=400" alt="Mate Madera">
+                        <h3>Mate Madera</h3>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1578473029175-8e1a6f20b1db?ixlib=rb-4.0.3&w=400" alt="Yerba Compuesta">
+                        <h3>Yerba Compuesta</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-dots" id="carouselDots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section class="tutorials-section">
+        <div class="tutorials-grid">
+            <div class="tutorial-card">
+                <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&w=600" alt="Cómo curar un mate">
+                <div class="tutorial-content">
+                    <h3>Cómo curar un mate de calabaza</h3>
+                    <button class="btn">Ver</button>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&w=600" alt="Preparación perfecta">
+                <div class="tutorial-content">
+                    <h3>La preparación perfecta del mate</h3>
+                    <button class="btn">Ver</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mates Selection Section -->
+    <section class="mates-section">
+        <div class="section-subtitle">Nuestros mates</div>
+        <h2>¿Cuál vas a elegir hoy?</h2>
+        <div class="mates-content">
+            <div class="mates-column">
+                <div class="mate-item">
+                    <h3>Mate Calabaza Tradicional</h3>
+                    <p>El clásico mate argentino hecho de calabaza natural, curado artesanalmente para brindar el sabor auténtico que todos conocemos. Perfecto para quienes buscan la experiencia tradicional del mate con toda su esencia cultural.</p>
+                </div>
+                <div class="mate-item">
+                    <h3>Mate de Madera Premium</h3>
+                    <p>Elaborado en maderas nobles seleccionadas, este mate ofrece durabilidad excepcional y un sabor único. Su diseño elegante lo convierte en la elección perfecta para ocasiones especiales o como regalo distinguido.</p>
+                </div>
+                <div class="mate-item">
+                    <h3>Mate Cerámica Artesanal</h3>
+                    <p>Creado por artesanos locales, combina tradición y modernidad. Su material cerámico facilita la limpieza y mantiene la temperatura ideal. Disponible en diversos colores y diseños únicos para personalizar tu experiencia.</p>
+                </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&w=400&h=500" alt="Mate Principal" class="mate-image">
+            <div class="mates-column">
+                <div class="mate-item">
+                    <h3>Mate Alpaca Clásico</h3>
+                    <p>La aleación de alpaca le otorga propiedades térmicas superiores, manteniendo la temperatura perfecta por más tiempo. Su acabado brillante y resistencia a la corrosión lo hacen ideal para el uso diario intensivo.</p>
+                </div>
+                <div class="mate-item">
+                    <h3>Mate Vidrio Borosilicato</h3>
+                    <p>Innovador diseño en vidrio de alta resistencia que permite apreciar visualmente el proceso de cebado. Fácil limpieza e higiénico, perfecto para quienes valoran la pureza del sabor sin interferencias de otros materiales.</p>
+                </div>
+                <div class="mate-item">
+                    <h3>Mate Silicona Flexible</h3>
+                    <p>La opción más práctica y moderna, irrompible y flexible. Ideal para viajes, oficina o actividades al aire libre. Su material antideslizante y colores vibrantes lo convierten en el compañero perfecto para cualquier aventura.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Locator Section -->
+    <section class="store-section">
+        <h2>Siempre hay una tienda cerca tuyo</h2>
+        <p>Encontrá nuestra sucursal más cercana</p>
+        <button class="btn">Ingresar</button>
+    </section>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
