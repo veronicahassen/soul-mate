@@ -2,11 +2,11 @@
 :root {
     --primary-color: #8B4513;     /* Marrón oscuro del mate */
     --secondary-color: #D2B48C;   /* Color caramelo claro del mate */
-    --accent-color: #006400;      /* Verde oscuro de la yerba */
-    --light-accent: #228B22;      /* Verde más claro para hover */
-    --text-dark: #333333;         /* Texto oscuro */
+    --accent-color: #D2691E;      /* Color chocolate para acentos */
+    --light-accent: #CD853F;      /* Marrón más claro para hover */
+    --text-dark: #2c2c2c;         /* Texto oscuro */
     --text-light: #FFFFFF;        /* Texto claro */
-    --background-light: #F5F5DC;  /* Beige claro para fondos */
+    --background-light: #F5F5F5;  /* Gris muy claro para fondos */
     --background-dark: #2C2416;   /* Marrón muy oscuro para footer */
     --shadow-color: rgba(139, 69, 19, 0.2); /* Sombra con color primario */
 }
@@ -52,7 +52,7 @@ ul {
     background: var(--accent-color);
     color: var(--text-light);
     padding: 12px 25px;
-    
+    border-radius: 30px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;

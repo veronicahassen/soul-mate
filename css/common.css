@@ -1,0 +1,128 @@
+/*///////////////// COMPONENTES COMUNES //////////////////*/
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/hero-bg.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-light);
+    padding: 0 5%;
+}
+
+.hero-content {
+    max-width: 600px;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero .subtitle {
+    font-size: 2.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.hero .btn {
+    background: transparent;
+    border: 2px solid var(--text-light);
+    color: var(--text-light);
+    padding: 15px 30px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: var(--text-light);
+    color: var(--text-dark);
+    transform: translateY(-2px);
+}
+
+/* Section Headers */
+.section-title {
+    font-size: 2.5em;
+    color: var(--text-dark);
+    margin-bottom: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.section-subtitle {
+    color: var(--accent-color);
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1080px) {
+    .hero h1 {
+        font-size: 3em;
+    }
+    
+    .hero .subtitle {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    
+    .hero .subtitle {
+        font-size: 2em;
+    }
+    
+    .section-title {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 0 3%;
+    }
+    
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.5em;
+    }
+    
+    .section-title {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.3em;
+    }
+}
