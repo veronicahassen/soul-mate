@@ -52,7 +52,7 @@ ul {
     background: var(--accent-color);
     color: var(--text-light);
     padding: 12px 25px;
-    border-radius: 30px;
+    
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
