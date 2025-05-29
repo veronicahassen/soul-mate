@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaja en Soul Mate</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/trabaja-en-sm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header id="navbar-placeholder"></header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>SÚMATE A NUESTRO EQUIPO</h1>
+        <h2>TRABAJA EN SM</h2>
+        <p>Si querés formar parte de Soul Mate enviá tus datos y adjuntá tu CV.</p>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="form-container">
+            <form>
+                <div class="form-grid">
+                    <!-- Left Column -->
+                    <div class="form-column">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="puesto">¿Cuál es tu puesto de trabajo?</label>
+                        <input type="text" id="puesto" name="puesto" required>
+
+                        <label for="cv">Adjuntar CV</label>
+                        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="form-column">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+
+                        <label for="sucursal">¿Cuál es tu sucursal de preferencia?</label>
+                        <select id="sucursal" name="sucursal" required>
+                            <option value="" disabled selected>Selecciona una sucursal</option>
+                            <option value="buenos-aires">Buenos Aires</option>
+                            <option value="cordoba">Córdoba</option>
+                            <option value="rosario">Rosario</option>
+                            <option value="mendoza">Mendoza</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script src="js/components.js"></script>
+</body>
+</html>

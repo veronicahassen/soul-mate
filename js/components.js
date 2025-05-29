@@ -1,15 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Load navbar
-    fetch('components/navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-        });
-    
-    // Load footer
-    fetch('components/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-        });
+    loadComponent('navbar-placeholder', 'components/navbar.html');
+    loadComponent('footer-placeholder', 'components/footer.html');
 });
+
+function loadComponent(placeholderId, componentPath) {
+    fetch(componentPath)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(placeholderId).innerHTML = data;
+        })
+        .catch(error => console.error('Error loading component:', error));
+}
