@@ -72,25 +72,36 @@
 .form-column .btn {
     align-self: flex-start;
     margin-top: 10px;
-    background-color: #8B4513;
+    background-color: var(--primary-color); /* #8B4513 */
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .form-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+@media (max-width: 1080px) {
+    /* Page Header (from styles.css) */
+    .page-header {
+        padding: 60px 4%;
     }
 
-    .form-column .btn {
-        width: 100%;
-        text-align: center;
+    .page-header h1 {
+        font-size: 2.5em;
     }
-}
 
-@media (max-width: 480px) {
+    .page-header h2 {
+        font-size: 2em;
+    }
+
+    .page-header p {
+        font-size: 1.2em;
+        max-width: 600px;
+    }
+
+    /* Form Section */
     .form-section {
-        padding: 60px 3%;
+        padding: 60px 4%;
+    }
+
+    .form-grid {
+        gap: 30px;
     }
 
     .form-column label {
@@ -100,6 +111,195 @@
     .form-column input,
     .form-column textarea,
     .form-column select {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+
+    .form-column textarea {
+        min-height: 90px;
+    }
+
+    .form-column .btn {
+        padding: 10px 20px;
         font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Page Header (from styles.css) */
+    .page-header {
+        padding: 50px 3%;
+    }
+
+    .page-header h1 {
+        font-size: 2.2em;
+    }
+
+    .page-header h2 {
+        font-size: 1.8em;
+    }
+
+    .page-header p {
+        font-size: 1.1em;
+        max-width: 500px;
+    }
+
+    /* Form Section */
+    .form-section {
+        padding: 50px 3%;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .form-column label {
+        font-size: 0.95em;
+    }
+
+    .form-column input,
+    .form-column textarea,
+    .form-column select {
+        padding: 10px;
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+
+    .form-column textarea {
+        min-height: 80px;
+    }
+
+    .form-column .btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Page Header (from styles.css) */
+    .page-header {
+        padding: 40px 2%;
+    }
+
+    .page-header h1 {
+        font-size: 1.8em;
+    }
+
+    .page-header h2 {
+        font-size: 1.5em;
+    }
+
+    .page-header p {
+        font-size: 1em;
+        max-width: 400px;
+    }
+
+    /* Form Section */
+    .form-section {
+        padding: 40px 2%;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+
+    .form-grid {
+        gap: 15px;
+    }
+
+    .form-column label {
+        font-size: 0.9em;
+    }
+
+    .form-column input,
+    .form-column textarea,
+    .form-column select {
+        padding: 8px;
+        font-size: 0.85em;
+        margin-bottom: 12px;
+    }
+
+    .form-column textarea {
+        min-height: 70px;
+    }
+
+    .form-column input[type="file"] {
+        padding: 6px;
+    }
+
+    .form-column select {
+        background-position: right 10px center;
+        background-size: 10px;
+        padding-right: 25px;
+    }
+
+    .form-column .btn {
+        padding: 10px;
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 375px) {
+    /* Page Header (from styles.css) */
+    .page-header {
+        padding: 30px 1%;
+    }
+
+    .page-header h1 {
+        font-size: 1.6em;
+    }
+
+    .page-header h2 {
+        font-size: 1.3em;
+    }
+
+    .page-header p {
+        font-size: 0.9em;
+        max-width: 350px;
+    }
+
+    /* Form Section */
+    .form-section {
+        padding: 30px 1%;
+    }
+
+    .form-grid {
+        gap: 10px;
+    }
+
+    .form-column label {
+        font-size: 0.85em;
+        margin-bottom: 6px;
+    }
+
+    .form-column input,
+    .form-column textarea,
+    .form-column select {
+        padding: 7px;
+        font-size: 0.8em;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .form-column textarea {
+        min-height: 60px;
+    }
+
+    .form-column input[type="file"] {
+        padding: 5px;
+    }
+
+    .form-column select {
+        background-position: right 8px center;
+        background-size: 8px;
+        padding-right: 20px;
+    }
+
+    .form-column .btn {
+        padding: 8px;
+        font-size: 0.8em;
     }
 }

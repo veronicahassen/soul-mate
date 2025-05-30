@@ -14,7 +14,7 @@ function loadComponent(placeholderId, componentPath) {
 
 // Carousel functionality
 let currentSlideIndex = 0;
-const totalSlides = 5;
+const totalSlides = 8;
 
 function moveCarousel(direction) {
     const carousel = document.getElementById('productCarousel');
