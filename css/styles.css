@@ -79,7 +79,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
+    padding: 10px 3%;
 }
 
 .logo-container {
@@ -87,11 +87,11 @@ header {
 }
 
 .logo {
-    height: 60px;
+    height: 50px;
 }
 
 nav {
-    flex: 2;
+    flex: 3;
 }
 
 nav > ul {
@@ -100,14 +100,14 @@ nav > ul {
 }
 
 nav > ul > li {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 nav > ul > li > a {
     font-weight: 600;
-    font-size: 1em;
+    font-size: 0.75em;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     transition: color 0.3s ease;
     position: relative;
 }
@@ -116,8 +116,8 @@ nav > ul > li > a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
-    bottom: -5px;
+    height: 1px;
+    bottom: -3px;
     left: 0;
     background-color: var(--accent-color);
     transition: width 0.3s ease;
