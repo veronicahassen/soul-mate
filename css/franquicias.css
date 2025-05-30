@@ -1,0 +1,239 @@
+/* Estilos específicos para la página de franquicias */
+
+.franquicias-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1589232877645-8a4acbe2b9e9?ixlib=rb-4.0.3&w=1200');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+}
+
+/* Beneficios Section */
+.beneficios-section {
+    padding: 4rem 2rem;
+    background-color: var(--background-light);
+}
+
+.beneficios-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.beneficio-card {
+    background: var(--text-light);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-5px);
+}
+
+.beneficio-card i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.beneficio-card h3 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.beneficio-card p {
+    color: var(--text-dark);
+}
+
+/* Requisitos Section */
+.requisitos-section {
+    padding: 4rem 2rem;
+    background-color: var(--background-light);
+}
+
+.requisitos-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.requisitos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.requisito-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--text-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.requisito-item i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.requisito-item p {
+    margin: 0;
+    color: var(--text-dark);
+}
+
+/* Proceso Section */
+.proceso-section {
+    padding: 4rem 2rem;
+    background-color: var(--background-light);
+}
+
+.proceso-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.proceso-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.proceso-step {
+    text-align: center;
+    padding: 2rem;
+    background: var(--text-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--accent-color);
+    color: var(--text-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-weight: bold;
+}
+
+.proceso-step h3 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.proceso-step p {
+    color: var(--text-dark);
+}
+
+/* Contacto Section */
+.contacto-franquicias {
+    padding: 4rem 2rem;
+    background-color: var(--background-light);
+}
+
+.contacto-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacto-content h2 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.contacto-content p {
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.franquicias-form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.franquicias-form input,
+.franquicias-form textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.franquicias-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Responsive Design */
+@media (max-width: 1080px) {
+    .beneficios-grid,
+    .requisitos-container,
+    .proceso-timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .franquicias-hero {
+        height: 50vh;
+    }
+
+    .beneficios-grid,
+    .requisitos-container,
+    .proceso-timeline {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .franquicias-hero {
+        height: 40vh;
+    }
+
+    .beneficios-section,
+    .requisitos-section,
+    .proceso-section,
+    .contacto-franquicias {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .franquicias-hero {
+        height: 35vh;
+    }
+
+    .beneficio-card h3,
+    .proceso-step h3 {
+        font-size: 1.2rem;
+    }
+} 
