@@ -112,7 +112,7 @@
 }
 
 .product-card img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .product-card h3 {
@@ -195,7 +195,9 @@
 
 .tutorial-card:hover {
     transform: translateY(-5px);
+    transform: scale(0.9);
 }
+
 
 .tutorial-card img {
     width: 100%;
