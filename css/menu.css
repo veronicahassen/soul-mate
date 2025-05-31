@@ -99,10 +99,9 @@
 }
 
 /* Tablet vertical */
+/* Tablet vertical */
 @media (max-width: 768px) {
-    .menu-item {
-        flex: 0 0 calc(50% - 15px);
-    }
+    /* Estilos ya definidos en la media query anterior */
 }
 
 /* Mobil 1 */

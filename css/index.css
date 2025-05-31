@@ -2,59 +2,7 @@
 
 /* Hero Section - Específico para index */
 .hero {
-    position: relative;
-    height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/inicio/mate.png') center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: var(--text-light);
-    padding: 0 5%;
-}
-
-.hero-content {
-    max-width: 600px;
-    z-index: 2;
-}
-
-.hero h1 {
-    font-size: 3.5em;
-    font-weight: 300;
-    margin-bottom: 10px;
-    line-height: 1.2;
-}
-
-.hero .subtitle {
-    font-size: 2.8em;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    line-height: 1.6;
-    font-weight: 400;
-}
-
-.hero .btn {
-    background: transparent;
-    border: 2px solid var(--text-light);
-    color: var(--text-light);
-    padding: 15px 30px;
-    font-size: 1em;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.hero .btn:hover {
-    background: var(--text-light);
-    color: var(--text-dark);
-    transform: translateY(-2px);
 }
 /* ///////////////// */
 /* Products Section */
@@ -194,8 +142,7 @@
 }
 
 .tutorial-card:hover {
-    transform: translateY(-5px);
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 

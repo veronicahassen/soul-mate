@@ -1,9 +1,9 @@
 /*///////////////// AJUSTES GENERALES//////////////////*/
 :root {
-    --primary-color: #8B4513;     /* Marrón oscuro del mate */
-    --secondary-color: #D2B48C;   /* Color caramelo claro del mate */
-    --accent-color: #D2691E;      /* Color chocolate para acentos */
-    --light-accent: #CD853F;      /* Marrón más claro para hover */
+    --primary-color: #84947C;     /* Verde musgo del mate */
+    --secondary-color: #E5D6AE;   /* Color caramelo claro del mate */
+    --accent-color: #84847C;      /* Color gris para acentos */
+    --light-accent: #E5D6AE;      /* Marrón más claro para hover */
     --text-dark: #2c2c2c;         /* Texto oscuro */
     --text-light: #FFFFFF;        /* Texto claro */
     --background-light: #F5F5F5;  /* Gris muy claro para fondos */
@@ -71,32 +71,42 @@ ul {
 /*__________________HEADER____________________________*/
 header {
     width: 100%;
-    background-color: var(--text-light);
-    box-shadow: 0 2px 10px var(--shadow-color);
+    background-color: #181D1D;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     position: sticky;
     top: 0;
     z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 3%;
+    padding: 0 3%;
+    height: 80px;
 }
 
 .logo-container {
-    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
 }
 
 .logo {
-    height: 50px;
+    height: 70px;
+    width: auto;
+    max-width: 100px;
+    object-fit: contain;
 }
 
 nav {
     flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 nav > ul {
     display: flex;
     justify-content: flex-end;
+    margin-left: auto;
 }
 
 nav > ul > li {
@@ -110,6 +120,7 @@ nav > ul > li > a {
     letter-spacing: 0.5px;
     transition: color 0.3s ease;
     position: relative;
+    color: #FFFFFF;
 }
 
 nav > ul > li > a::after {
@@ -119,8 +130,12 @@ nav > ul > li > a::after {
     height: 1px;
     bottom: -3px;
     left: 0;
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
     transition: width 0.3s ease;
+}
+
+nav > ul > li > a:hover {
+    color: var(--secondary-color);
 }
 
 nav > ul > li > a:hover::after {

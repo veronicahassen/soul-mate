@@ -1,6 +1,6 @@
-// Wait for the DOM to be fully loaded
+// Funcionalidad común para todas las páginas
 document.addEventListener('DOMContentLoaded', function() {
-    // Add smooth scrolling to all links
+    // Smooth scrolling para enlaces internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -14,6 +14,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // Mobile menu toggle functionality can be added here
 });

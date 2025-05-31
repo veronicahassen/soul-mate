@@ -1,17 +1,5 @@
 /* Estilos específicos para la página de tienda */
 
-.tienda-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&w=1200');
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--text-light);
-}
-
 /* Categorías Section */
 .categorias-section {
     padding: 4rem 2rem;
