@@ -148,10 +148,6 @@
 }
 
 @media (max-width: 768px) {
-    .tienda-hero {
-        height: 50vh;
-    }
-
     .productos-grid {
         grid-template-columns: 1fr;
     }
@@ -162,10 +158,6 @@
 }
 
 @media (max-width: 480px) {
-    .tienda-hero {
-        height: 40vh;
-    }
-
     .categorias-section,
     .productos-section,
     .newsletter-section {
@@ -174,10 +166,6 @@
 }
 
 @media (max-width: 375px) {
-    .tienda-hero {
-        height: 35vh;
-    }
-
     .producto-info h3 {
         font-size: 1.2rem;
     }

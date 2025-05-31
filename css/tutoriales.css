@@ -128,10 +128,6 @@
 }
 
 @media (max-width: 768px) {
-    .tutoriales-hero {
-        height: 50vh;
-    }
-
     .tutoriales-container,
     .video-grid {
         grid-template-columns: 1fr;
@@ -139,10 +135,6 @@
 }
 
 @media (max-width: 480px) {
-    .tutoriales-hero {
-        height: 40vh;
-    }
-
     .tutoriales-grid-section,
     .video-tutoriales {
         padding: 2rem 1rem;
@@ -150,10 +142,6 @@
 }
 
 @media (max-width: 375px) {
-    .tutoriales-hero {
-        height: 35vh;
-    }
-
     .tutorial-content h3 {
         font-size: 1.2rem;
     }

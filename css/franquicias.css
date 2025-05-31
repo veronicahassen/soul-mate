@@ -191,10 +191,6 @@
 }
 
 @media (max-width: 768px) {
-    .franquicias-hero {
-        height: 50vh;
-    }
-
     .beneficios-grid,
     .requisitos-container,
     .proceso-timeline {
@@ -203,10 +199,6 @@
 }
 
 @media (max-width: 480px) {
-    .franquicias-hero {
-        height: 40vh;
-    }
-
     .beneficios-section,
     .requisitos-section,
     .proceso-section,
@@ -216,10 +208,6 @@
 }
 
 @media (max-width: 375px) {
-    .franquicias-hero {
-        height: 35vh;
-    }
-
     .beneficio-card h3,
     .proceso-step h3 {
         font-size: 1.2rem;
