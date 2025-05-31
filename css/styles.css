@@ -142,6 +142,37 @@ nav > ul > li > a:hover::after {
     width: 100%;
 }
 
+/* ESTILOS DEL MENÚ HAMBURGUESA */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 101;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Animamos el menú hamburguesa cuando está activo */
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /*__________________PAGE HEADER____________________________*/
 .page-header {
     width: 100%;
@@ -252,29 +283,78 @@ footer {
 }
 
 /*__________________RESPONSIVE DESIGN____________________________*/
-/* Tablet horizontal */
-@media (max-width: 1080px) {
-    .page-header h1 {
-        font-size: 2.5em;
-    }
-}
 
-/* Tablet vertical */
-@media (max-width: 768px) {
+/* Para tablets y móviles grandes (768px y menos) */
+@media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 5%;
+        position: relative;
+    }
+    
+    .hamburger-menu {
+        display: flex;
+        order: 1;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
     }
     
     .logo-container {
-        margin-bottom: 15px;
+        order: 2;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    nav {
+        order: 3;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 70%;
+        height: calc(100vh - 80px);
+        background-color: #181D1D;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 30px 20px;
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    nav.active {
+        left: 0;
     }
     
     nav > ul {
-        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
     }
     
     nav > ul > li {
-        margin: 0 15px;
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+    
+    nav > ul > li > a {
+        font-size: 1em;
+        padding: 15px 0;
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    nav > ul > li > a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding-left: 10px;
+    }
+    
+    .page-header {
+        padding: 60px 15px;
     }
     
     .page-header h1 {
@@ -286,23 +366,53 @@ footer {
     }
 }
 
-/* Mobil 1 */
-@media (max-width: 480px) {
+/* Para móviles medianos (480px y menos) */
+@media screen and (max-width: 480px) {
     body {
         font-size: 14px;
     }
     
-    nav > ul {
-        flex-direction: column;
-        align-items: center;
+    header {
+        height: 70px;
+        padding: 0 4%;
     }
     
-    nav > ul > li {
-        margin: 8px 0;
+    .hamburger-menu {
+        left: 4%;
+    }
+    
+    .hamburger-menu span {
+        width: 22px;
+        height: 2px;
+    }
+    
+    .logo {
+        height: 50px;
+        max-width: 80px;
+    }
+    
+    nav {
+        top: 70px;
+        height: calc(100vh - 70px);
+        width: 75%;
+        padding: 25px 15px;
+    }
+    
+    nav > ul > li > a {
+        font-size: 0.9em;
+        padding: 12px 0;
+    }
+    
+    .page-header {
+        padding: 50px 12px;
     }
     
     .page-header h1 {
         font-size: 1.8em;
+    }
+    
+    .page-header p {
+        font-size: 1em;
     }
     
     .btn {
@@ -311,14 +421,50 @@ footer {
     }
 }
 
-/* Mobil 2 */
-@media (max-width: 375px) {
+/* Para móviles pequeños (375px y menos) */
+@media screen and (max-width: 375px) {
+    header {
+        height: 65px;
+        padding: 0 3%;
+    }
+    
+    .hamburger-menu {
+        left: 3%;
+    }
+    
+    .hamburger-menu span {
+        width: 20px;
+        height: 2px;
+        margin: 2px 0;
+    }
+    
+    .logo {
+        height: 45px;
+        max-width: 70px;
+    }
+    
+    nav {
+        top: 65px;
+        height: calc(100vh - 65px);
+        width: 80%;
+        padding: 20px 12px;
+    }
+    
+    nav > ul > li > a {
+        font-size: 0.85em;
+        padding: 10px 0;
+    }
+    
     .page-header {
-        padding: 60px 15px;
+        padding: 40px 10px;
     }
     
     .page-header h1 {
         font-size: 1.6em;
+    }
+    
+    .page-header p {
+        font-size: 0.9em;
     }
     
     .footer-section {
