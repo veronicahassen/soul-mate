@@ -4,7 +4,7 @@
 .hero {
     position: relative;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/mate.png') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/inicio/mate.png') center/cover;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -56,7 +56,7 @@
     color: var(--text-dark);
     transform: translateY(-2px);
 }
-
+/* ///////////////// */
 /* Products Section */
 .products-section {
     padding: 80px 5%;
@@ -112,7 +112,7 @@
 }
 
 .product-card img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .product-card h3 {
@@ -170,7 +170,7 @@
 .dot.active {
     background: var(--primary-color);
 }
-
+/* /////////////////////// */
 /* Tutorials Section */
 .tutorials-section {
     padding: 80px 5%;
@@ -195,7 +195,9 @@
 
 .tutorial-card:hover {
     transform: translateY(-5px);
+    transform: scale(0.9);
 }
+
 
 .tutorial-card img {
     width: 100%;
@@ -230,7 +232,7 @@
     text-decoration: none;
     display: inline-block;
 }
-
+/*////////////////////// */
 /* Mates Selection Section */
 .mates-section {
     padding: 80px 5%;
@@ -291,7 +293,8 @@
     box-shadow: 0 15px 35px var(--shadow-color);
 }
 
-/* Store Locator Section */
+/*////////////////////// */
+/* Store Section */
 .store-section {
     position: relative;
     padding: 100px 5%;
@@ -321,8 +324,8 @@
     border: 2px solid var(--text-light);
     color: var(--text-light);
 }
-
-/* Responsive Design - Específico para index */
+/*////////////////////// */
+/* Responsive Design  */
 @media (max-width: 1080px) {
     .hero {
         height: 80vh;
