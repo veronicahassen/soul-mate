@@ -12,7 +12,7 @@ function loadComponent(placeholderId, componentPath) {
         .catch(error => console.error('Error loading component:', error));
 }
 
-// Carousel functionality
+// Funcionalidad del Carrusel
 let currentSlideIndex = 0;
 const totalSlides = 8;
 
@@ -27,7 +27,7 @@ function moveCarousel(direction) {
         currentSlideIndex = totalSlides - 1;
     }
     
-    // Calcular el desplazamiento considerando el gap
+    // En esta sección calculamos el desplazamiento considerando el gap
     const slideWidth = 20; // cada slide es 20% del ancho
     const translateX = -currentSlideIndex * slideWidth;
     carousel.style.transform = `translateX(${translateX}%)`;
@@ -50,7 +50,7 @@ function updateDots() {
     });
 }
 
-// Auto-play carousel
+// Auto-play del carrusel
 setInterval(() => {
     moveCarousel(1);
 }, 5000);

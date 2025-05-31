@@ -1,7 +1,10 @@
+
+
+/* //////////////////////// */
 /* Form Section */
 .form-section {
     padding: 80px 5%;
-    background-color: #F5F5F5; /* Very light gray background */
+    background-color: #F5F5F5; 
 }
 
 .form-container {
@@ -72,9 +75,9 @@
 .form-column .btn {
     align-self: flex-start;
     margin-top: 10px;
-    background-color: var(--primary-color); /* #8B4513 */
+    background-color: var(--primary-color); 
 }
-
+/*//////////////////////*/
 /* Responsive Design */
 @media (max-width: 1080px) {
     /* Page Header (from styles.css) */
