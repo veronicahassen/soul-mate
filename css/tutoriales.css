@@ -47,20 +47,20 @@
 
 /* Video Tutoriales Section */
 .video-tutoriales {
-    padding: 4rem 2rem;
+    padding: 60px 5%;
     background-color: var(--background-light);
 }
 
 .video-tutoriales h2 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 40px;
     color: var(--text-dark);
 }
 
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -69,54 +69,40 @@
     background: var(--text-light);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px var(--shadow-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.video-thumbnail {
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-container {
     position: relative;
-    cursor: pointer;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
 }
 
-.video-thumbnail img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.play-button {
+.video-container iframe {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-}
-
-.play-button i {
-    color: var(--text-light);
-    font-size: 24px;
-}
-
-.video-thumbnail:hover .play-button {
-    background: var(--accent-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 .video-card h3 {
-    padding: 1rem;
-    margin: 0;
+    padding: 20px 20px 10px;
+    font-size: 1.2em;
     color: var(--text-dark);
 }
 
 .video-card p {
-    padding: 0 1rem 1rem;
-    color: var(--text-dark);
-    margin: 0;
+    padding: 0 20px 20px;
+    color: var(--text-secondary);
+    font-size: 0.9em;
 }
 
 /* Responsive Design */
@@ -132,12 +118,34 @@
     .video-grid {
         grid-template-columns: 1fr;
     }
+
+    .video-tutoriales {
+        padding: 40px 3%;
+    }
+
+    .video-grid {
+        gap: 20px;
+    }
+
+    .video-card h3 {
+        font-size: 1.1em;
+        padding: 15px 15px 8px;
+    }
+
+    .video-card p {
+        padding: 0 15px 15px;
+        font-size: 0.85em;
+    }
 }
 
 @media (max-width: 480px) {
     .tutoriales-grid-section,
     .video-tutoriales {
-        padding: 2rem 1rem;
+        padding: 30px 2%;
+    }
+
+    .video-grid {
+        gap: 15px;
     }
 }
 
