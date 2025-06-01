@@ -27,38 +27,54 @@
                 <div class="form-grid">
                     <!-- Left Column -->
                     <div class="form-column">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <div class="form-field">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
 
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
+                        <div class="form-field">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
 
-                        <label for="puesto">¿Cuál es tu puesto de trabajo?</label>
-                        <input type="text" id="puesto" name="puesto" required>
+                        <div class="form-field">
+                            <label for="puesto">¿Cuál es tu puesto de trabajo?</label>
+                            <input type="text" id="puesto" name="puesto" required>
+                        </div>
 
-                        <label for="cv">Adjuntar CV</label>
-                        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+                        <div class="form-field">
+                            <label for="cv">Adjuntar CV</label>
+                            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+                        </div>
 
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                        <div class="form-field">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                        </div>
                     </div>
 
                     <!-- Right Column -->
                     <div class="form-column">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" name="apellido" required>
+                        <div class="form-field">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" required>
+                        </div>
 
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" required>
+                        <div class="form-field">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
 
-                        <label for="sucursal">¿Cuál es tu sucursal de preferencia?</label>
-                        <select id="sucursal" name="sucursal" required>
-                            <option value="" disabled selected>Selecciona una sucursal</option>
-                            <option value="buenos-aires">Buenos Aires</option>
-                            <option value="cordoba">Córdoba</option>
-                            <option value="rosario">Rosario</option>
-                            <option value="mendoza">Mendoza</option>
-                        </select>
+                        <div class="form-field">
+                            <label for="sucursal">¿Cuál es tu sucursal de preferencia?</label>
+                            <select id="sucursal" name="sucursal" required>
+                                <option value="" disabled selected>Selecciona una sucursal</option>
+                                <option value="buenos-aires">Buenos Aires</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="rosario">Rosario</option>
+                                <option value="mendoza">Mendoza</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <div class="form-submit-container">
