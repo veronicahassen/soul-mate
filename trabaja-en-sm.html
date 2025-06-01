@@ -20,53 +20,48 @@
         <p>Si querés formar parte de Soul Mate enviá tus datos y adjuntá tu CV.</p>
     </section>
 
-    <!-- Form Section -->
-    <section class="form-section">
-        <div class="form-container">
-            <form id="trabaja-form">
-                <div class="form-grid">
-                    <!-- Left Column -->
-                    <div class="form-column">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" required>
+   <section class="form-section">
+    <div class="form-container">
+        <form id="trabaja-form">
+            <div class="form-grid">
+                <div class="form-column">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
 
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
 
-                        <label for="puesto">¿Cuál es tu puesto de trabajo?</label>
-                        <input type="text" id="puesto" name="puesto" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
 
-                        <label for="cv">Adjuntar CV</label>
-                        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
 
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                    <label for="puesto">¿Cuál es tu puesto de trabajo?</label>
+                    <input type="text" id="puesto" name="puesto" required>
 
-                        <button type="submit" class="btn">Enviar</button>
-                    </div>
+                    <label for="sucursal">¿Cuál es tu sucursal de preferencia?</label>
+                    <select id="sucursal" name="sucursal" required>
+                        <option value="" disabled selected>Selecciona una sucursal</option>
+                        <option value="buenos-aires">Buenos Aires</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="rosario">Rosario</option>
+                        <option value="mendoza">Mendoza</option>
+                    </select>
 
-                    <!-- Right Column -->
-                    <div class="form-column">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" name="apellido" required>
+                    <label for="cv">Adjuntar CV</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
 
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" required>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
 
-                        <label for="sucursal">¿Cuál es tu sucursal de preferencia?</label>
-                        <select id="sucursal" name="sucursal" required>
-                            <option value="" disabled selected>Selecciona una sucursal</option>
-                            <option value="buenos-aires">Buenos Aires</option>
-                            <option value="cordoba">Córdoba</option>
-                            <option value="rosario">Rosario</option>
-                            <option value="mendoza">Mendoza</option>
-                        </select>
-                    </div>
+                    <button type="submit" class="btn">Enviar</button>
                 </div>
-                <div class="form-message" id="form-message"></div>
-            </form>
-        </div>
-    </section>
+            </div>
+            <div class="form-message" id="form-message"></div>
+        </form>
+    </div>
+</section>
 
     <footer id="footer-placeholder"></footer>
 

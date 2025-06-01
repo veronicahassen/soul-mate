@@ -1,10 +1,7 @@
-
-
-/* //////////////////////// */
 /* Form Section */
 .form-section {
     padding: 80px 5%;
-    background-color: #F5F5F5; 
+    background-color: #F5F5F5;
 }
 
 .form-container {
@@ -75,12 +72,11 @@
 .form-column .btn {
     align-self: flex-start;
     margin-top: 10px;
-    background-color: var(--primary-color); 
+    background-color: var(--primary-color);
 }
-/*//////////////////////*/
+
 /* Responsive Design */
 @media (max-width: 1080px) {
-    /* Page Header (from styles.css) */
     .page-header {
         padding: 60px 4%;
     }
@@ -98,7 +94,6 @@
         max-width: 600px;
     }
 
-    /* Form Section */
     .form-section {
         padding: 60px 4%;
     }
@@ -129,7 +124,6 @@
 }
 
 @media (max-width: 768px) {
-    /* Page Header (from styles.css) */
     .page-header {
         padding: 50px 3%;
     }
@@ -147,7 +141,6 @@
         max-width: 500px;
     }
 
-    /* Form Section */
     .form-section {
         padding: 50px 3%;
     }
@@ -182,7 +175,6 @@
 }
 
 @media (max-width: 480px) {
-    /* Page Header (from styles.css) */
     .page-header {
         padding: 40px 2%;
     }
@@ -200,7 +192,6 @@
         max-width: 400px;
     }
 
-    /* Form Section */
     .form-section {
         padding: 40px 2%;
     }
@@ -246,7 +237,6 @@
 }
 
 @media (max-width: 375px) {
-    /* Page Header (from styles.css) */
     .page-header {
         padding: 30px 1%;
     }
@@ -264,7 +254,6 @@
         max-width: 350px;
     }
 
-    /* Form Section */
     .form-section {
         padding: 30px 1%;
     }
