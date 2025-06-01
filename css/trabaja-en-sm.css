@@ -73,27 +73,16 @@
     align-self: flex-start;
     margin-top: 10px;
     background-color: var(--primary-color);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 /* Responsive Design */
 @media (max-width: 1080px) {
-    .page-header {
-        padding: 60px 4%;
-    }
-
-    .page-header h1 {
-        font-size: 2.5em;
-    }
-
-    .page-header h2 {
-        font-size: 2em;
-    }
-
-    .page-header p {
-        font-size: 1.2em;
-        max-width: 600px;
-    }
-
     .form-section {
         padding: 60px 4%;
     }
@@ -124,23 +113,6 @@
 }
 
 @media (max-width: 768px) {
-    .page-header {
-        padding: 50px 3%;
-    }
-
-    .page-header h1 {
-        font-size: 2.2em;
-    }
-
-    .page-header h2 {
-        font-size: 1.8em;
-    }
-
-    .page-header p {
-        font-size: 1.1em;
-        max-width: 500px;
-    }
-
     .form-section {
         padding: 50px 3%;
     }
@@ -148,6 +120,79 @@
     .form-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .form-column {
+        display: contents; /* Collapses columns into a single flow */
+    }
+
+    /* Explicitly set order for each field */
+    label[for="nombre"] {
+        order: 1;
+    }
+
+    #nombre {
+        order: 2;
+    }
+
+    label[for="apellido"] {
+        order: 3;
+    }
+
+    #apellido {
+        order: 4;
+    }
+
+    label[for="telefono"] {
+        order: 5;
+    }
+
+    #telefono {
+        order: 6;
+    }
+
+    label[for="email"] {
+        order: 7;
+    }
+
+    #email {
+        order: 8;
+    }
+
+    label[for="puesto"] {
+        order: 9;
+    }
+
+    #puesto {
+        order: 10;
+    }
+
+    label[for="sucursal"] {
+        order: 11;
+    }
+
+    #sucursal {
+        order: 12;
+    }
+
+    label[for="cv"] {
+        order: 13;
+    }
+
+    #cv {
+        order: 14;
+    }
+
+    label[for="mensaje"] {
+        order: 15;
+    }
+
+    #mensaje {
+        order: 16;
+    }
+
+    .form-column .btn {
+        order: 17;
     }
 
     .form-column label {
@@ -175,23 +220,6 @@
 }
 
 @media (max-width: 480px) {
-    .page-header {
-        padding: 40px 2%;
-    }
-
-    .page-header h1 {
-        font-size: 1.8em;
-    }
-
-    .page-header h2 {
-        font-size: 1.5em;
-    }
-
-    .page-header p {
-        font-size: 1em;
-        max-width: 400px;
-    }
-
     .form-section {
         padding: 40px 2%;
     }
@@ -237,23 +265,6 @@
 }
 
 @media (max-width: 375px) {
-    .page-header {
-        padding: 30px 1%;
-    }
-
-    .page-header h1 {
-        font-size: 1.6em;
-    }
-
-    .page-header h2 {
-        font-size: 1.3em;
-    }
-
-    .page-header p {
-        font-size: 0.9em;
-        max-width: 350px;
-    }
-
     .form-section {
         padding: 30px 1%;
     }

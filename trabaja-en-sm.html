@@ -20,7 +20,7 @@
         <p>Si querés formar parte de Soul Mate enviá tus datos y adjuntá tu CV.</p>
     </section>
 
-   <section class="form-section">
+ <section class="form-section">
     <div class="form-container">
         <form id="trabaja-form">
             <div class="form-grid">
@@ -28,17 +28,23 @@
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" required>
 
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" required>
-
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" required>
-
                     <label for="puesto">¿Cuál es tu puesto de trabajo?</label>
                     <input type="text" id="puesto" name="puesto" required>
+
+                    <label for="cv">Adjuntar CV</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+                <div class="form-column">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
 
                     <label for="sucursal">¿Cuál es tu sucursal de preferencia?</label>
                     <select id="sucursal" name="sucursal" required>
@@ -49,13 +55,8 @@
                         <option value="mendoza">Mendoza</option>
                     </select>
 
-                    <label for="cv">Adjuntar CV</label>
-                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
-
                     <label for="mensaje">Mensaje</label>
                     <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-
-                    <button type="submit" class="btn">Enviar</button>
                 </div>
             </div>
             <div class="form-message" id="form-message"></div>
