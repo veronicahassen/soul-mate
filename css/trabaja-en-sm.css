@@ -200,6 +200,18 @@
         margin-bottom: 15px;
     }
 
+    /* Apply order to fields in mobile view */
+    .form-column .form-field:nth-child(1) { order: 1; /* Nombre (Left Col) */ }
+    .form-column .form-field:nth-child(2) { order: 3; /* E-mail (Left Col) */ }
+    .form-column .form-field:nth-child(3) { order: 5; /* Puesto (Left Col) */ }
+    .form-column .form-field:nth-child(4) { order: 7; /* CV (Left Col) */ }
+    .form-column .form-field:nth-child(5) { order: 8; /* Mensaje (Left Col) */ }
+    
+    /* Right Column Fields */
+    .form-column:nth-child(2) .form-field:nth-child(1) { order: 2; /* Apellido (Right Col) */ }
+    .form-column:nth-child(2) .form-field:nth-child(2) { order: 4; /* Telefono (Right Col) */ }
+    .form-column:nth-child(2) .form-field:nth-child(3) { order: 6; /* Sucursal (Right Col) */ }
+
     .form-column textarea {
         min-height: 80px;
     }
