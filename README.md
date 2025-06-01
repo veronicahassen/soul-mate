@@ -52,7 +52,9 @@ Este proyecto es un sitio web para una tienda de yerba mate argentina llamada "S
 
 ## Vista previa
 
-![Logo de Soul Mate](images/logo.jpeg)
+![Logo de Soul Mate](images/Logo.jpeg)
+
+*Vista del logo de Soul Mate*
 
 ## Autor
 
